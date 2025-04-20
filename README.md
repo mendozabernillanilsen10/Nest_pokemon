@@ -42,7 +42,12 @@ $ npm i -g @nestjs/cli
  docker-compose up -d
 
 ```
-5: levantar el proyecto
+5.clonar el archivo __.env.template__ y renomabra __env__
+y confiruar las variables de entorno definida
+
+
+
+6: levantar el proyecto
 ```bash
 # development
 $ yarn run start
@@ -72,13 +77,13 @@ $ yarn run test:cov
 + Nest
 <!--  -->
 
-crear un modulo
+7.crear un modulo
 
  nest g pi common/pipes/ParseMongoId --no-speccls
 
 
 
- 6:Semilla dev
+8:Semilla dev
  http://localhost:3000/api/v2/seed
 
 
