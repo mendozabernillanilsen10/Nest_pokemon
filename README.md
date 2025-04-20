@@ -77,3 +77,8 @@ crear un modulo
  nest g pi common/pipes/ParseMongoId --no-speccls
 
 
+
+ 6:Semilla dev
+ http://localhost:3000/api/v2/seed
+
+

@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
 import {
@@ -13,6 +14,7 @@ import { PokemonService } from './pokemon.service';
   providers: [PokemonService],
 
   imports:[
+    ConfigModule,
     MongooseModule.forFeature([
       {
         name: Pokemon.name,

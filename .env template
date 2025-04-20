@@ -1,0 +1,8 @@
+
+# MongoDB connection string
+MONGODB=mongodb://localhost:27017/nest-pokemon
+PORT=3000
+
+NODE_ENV=development
+DEFAULT_LIMIT=10
+
