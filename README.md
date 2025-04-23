@@ -87,3 +87,27 @@ $ yarn run test:cov
  http://localhost:3000/api/v2/seed
 
 
+ #produccion build
+
+ 1.  crear el archivo   '.env.prod'
+ 2. llenar las variables de entorno
+ 3. creat la nueva imaegn  Build
+
+ ``` 
+ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+ ```
+5. Run
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+
+ ``` 
+
+
+Nota
+- Por defecto, docker-compose usa el archivo .env, por lo que si tienen el archivo .env y lo configuran con sus variables de entorno de producción, bastaría con
+
+ ``` 
+docker-compose -f docker-compose.prod.yaml up --build
+
+  ``` 
